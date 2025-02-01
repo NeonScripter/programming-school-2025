@@ -10,11 +10,18 @@ public class App {
 
     public static void main(String[] args) {
         int y = 0;
-        for(int x=0; x<=100; x++) {
+        int z = 0;
+        
+        for(int x=100; x>=0; x--) {
             y+=x;
             System.out.println(x);
+            if (x%2==0) {
+                z+=x;
+            }
+            
         }
         System.out.println(y);
+        System.out.println(z);
         System.out.println(new App().getGreeting());
         System.out.println("DYLAN");
     }
