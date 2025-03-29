@@ -15,14 +15,39 @@ public class App {
         for(int x=100; x>=0; x--) {
             y+=x;
             System.out.println(x);
+
+
+            
             if (x%2==0) {
                 z+=x;
             }
+
+
             
         }
+
+        int[] mBtArray = new int[19];
+
         System.out.println(y);
         System.out.println(z);
         System.out.println(new App().getGreeting());
         System.out.println("DYLAN");
+
+        int xexexe;
+        for(xexexe=0; xexexe<=1000; xexexe++) {
+            System.out.println(xexexe);
+        }
+
+        double el = 0.5;
+        double sumthing = 0;
+        for(int i = 0; i < 1000; i++) {
+            sumthing += el;
+            el= 0.5 * el;
+        }
+
+        System.out.println("🚟🚟🚟🚟🚟🚟🚟🫃🫃🫃🫃🫃🫃🫃🫃🫃🫃🚈🚈🚈🚈🚈🚈🚈🚈🚈🚈🚈🚈");
+        System.out.println(sumthing);
+    System.out.println(mBtArray[4]);
+        
     }
 }
