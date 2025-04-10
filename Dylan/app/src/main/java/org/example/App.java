@@ -15,6 +15,10 @@ public class App {
     }
 
     public static void main(String[] args) {
+
+        simpleArray();
+
+        /* 
         int y = 0;
         int z = 0;
         
@@ -65,5 +69,15 @@ public class App {
         a[0] = 7;
         fn2(a);
         System.out.println(a[0]);
+        */
+    }
+
+    public static void simpleArray() {
+        int [] parkst = new int[50];
+        parkst[0] = 1;
+        for (int govtctr = 1; govtctr<=49; govtctr++) {
+            parkst[govtctr]= parkst[govtctr-1] * -5 + 4;
+            System.out.println(parkst[govtctr]);
+        }
     }
 }
