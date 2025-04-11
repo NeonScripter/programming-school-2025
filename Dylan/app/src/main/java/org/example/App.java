@@ -16,7 +16,8 @@ public class App {
 
     public static void main(String[] args) {
 
-        simpleArray();
+        a();
+
 
         /* 
         int y = 0;
@@ -79,5 +80,30 @@ public class App {
             parkst[govtctr]= parkst[govtctr-1] * -5 + 4;
             System.out.println(parkst[govtctr]);
         }
+    }
+
+    /* int[] mBtArray = new int[10];
+    Random rnd = new Random();
+    rnd.nextInt(20);
+    */
+
+
+    public static void a() {
+    int[] b = new int[10];
+    Random c = new Random();
+    c.nextInt(18);
+
+    for (int d=0; d<10; d++) {
+        b[d] = c.nextInt(19);
+        System.out.println(b[d]);
+    }
+    int[] cat = new int[10];
+    for (int e=10; e>0; e--) {
+        cat[10-e] = b[e-1];
+    }
+    for (int finishitalready=0; finishitalready<10; finishitalready++) {
+        System.out.println(cat[finishitalready]);
+    }
+
     }
 }
